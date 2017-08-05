@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/romabelka/js_ru_23_09_21_30"
+    "url": "git+https://github.com/jscodegeek/news-site.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/romabelka/js_ru_23_09_21_30"
+    "url": "https://github.com/jscodegeek/news-site.git"
   },
-  "homepage": "https://github.com/romabelka/js_ru_23_09_21_30",
+  "homepage": "https://github.com/jscodegeek/news-site.git",
   "devDependencies": {
     "babel-core": "^6.13.2",
     "babel-loader": "^6.2.4",
