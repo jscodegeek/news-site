@@ -1,6 +1,6 @@
 {
-  "name": "news_site_for_react_course",
-  "version": "0.1.0",
+  "name": "react_course_23_09_21_30",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jscodegeek/news-site.git"
+    "url": "git+https://github.com/romabelka/js_ru_23_09_21_30"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jscodegeek/news-site.git"
+    "url": "https://github.com/romabelka/js_ru_23_09_21_30"
   },
-  "homepage": "https://github.com/jscodegeek/news-site.git",
+  "homepage": "https://github.com/romabelka/js_ru_23_09_21_30",
   "devDependencies": {
     "babel-core": "^6.13.2",
     "babel-loader": "^6.2.4",
