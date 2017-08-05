@@ -2,10 +2,6 @@ import React, { Component, PropTypes } from 'react'
 import CommentList from './CommentList'
 
 export default class Article extends Component {
-    state = {
-        isOpen: false
-    }
-
     static propTypes = {
         article: PropTypes.object.isRequired
     }
@@ -18,25 +14,22 @@ export default class Article extends Component {
         }
     }
 */
+    componentDidMount() {
+        console.log('---', this.refs.container)
+    }
 
     render() {
-        const { article } = this.props
+        const { article, onClick } = this.props
         return (
-            <div>
-                <h3 onClick = {this.toggleOpen}>{article.title}</h3>
+            <div ref = "container">
+                <h3 onClick = {onClick}>{article.title}</h3>
                 {this.getBody()}
             </div>
         )
     }
 
-    toggleOpen = () => {
-        this.setState({
-            isOpen: !this.state.isOpen
-        })
-    }
-
     getBody() {
-        if (!this.state.isOpen) return null
+        if (!this.props.isOpen) return null
         return (
             <section>
                 {this.props.article.text}
