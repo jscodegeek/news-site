@@ -1,20 +1,20 @@
 import React from 'react'
- 
-export default function toggleOpen(Component) {
+
+export default function accordion (Component) {
     return class WrapperComponent extends React.Component {
         state = {
-            isOpen: false
+            openItemId: null 
         }
 
-        toggleOpen = ev => {
+        toggleOpenItem = id => ev => {
             ev && ev.preventDefault && ev.preventDefault()
             this.setState({
-                isOpen: !this.state.isOpen
+                openItemId: id
             })
         }
 
         render() {
-            return <Component {...this.props} {...this.state} toggleOpen = {this.toggleOpen}/>
+            return <Component {...this.props} {...this.state} toggleOpenItem = {this.toggleOpenItem}/>
         }
     }
 }
