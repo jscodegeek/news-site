@@ -9,7 +9,7 @@ export default function accordion (Component) {
         toggleOpenItem = id => ev => {
             ev && ev.preventDefault && ev.preventDefault()
             this.setState({
-                openItemId: id
+                openItemId: id === this.state.openItemId ? null : id
             })
         }
 

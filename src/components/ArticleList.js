@@ -26,12 +26,6 @@ class ArticleList extends React.Component {
             </div>
         )
     }
-
-    toggleOpenArticle = id => ev => {
-        this.setState({
-            openArticleId: id
-        })
-    }
 }
 
 export default accordion(ArticleList)
