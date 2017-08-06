@@ -3,7 +3,8 @@ import CommentList from './CommentList'
 
 export default class Article extends Component {
     static propTypes = {
-        article: PropTypes.object.isRequired
+        article: PropTypes.object.isRequired,
+        onClick: PropTypes.func
     }
 
 /*
