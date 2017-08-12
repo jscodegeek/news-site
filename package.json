@@ -28,7 +28,10 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "css-loader": "^0.28.4",
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "react-select": "^1.0.0-rc.5",
+    "style-loader": "^0.18.2"
   }
 }
