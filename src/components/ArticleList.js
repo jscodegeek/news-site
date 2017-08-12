@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react'
+import { findDOMNode } from 'react-dom'
 import Article from './Article'
 import accordion from '../decorators/accordion'
 
@@ -13,7 +14,8 @@ class ArticleList extends React.Component {
             <li key = {article.id}>
                 <Article article = {article}
                     isOpen = {openItemId == article.id}
-                    onClick = {toggleOpenItem(article.id)}    
+                    onClick = {toggleOpenItem(article.id)}
+                    ref = {this.getArticleRef}    
                 />
             </li>)
         return (
@@ -25,6 +27,11 @@ class ArticleList extends React.Component {
                 </ul>
             </div>
         )
+    }
+
+    getArticleRef = (article) => {
+        this.article = article
+        console.log('---', findDOMNode(article))
     }
 }
 
