@@ -19,6 +19,14 @@ export default class Article extends Component {
         console.log('---', this.refs.container)
     }
 
+    // shouldComponentUpdate(nextProps, nextState) {
+    //    return this.props.isOpen != nextProps.isOpen      
+    // }
+
+    componentWillUpdate() {
+        console.log('---', 'updating article')
+    }
+
     render() {
         const { article, onClick } = this.props
         return (
