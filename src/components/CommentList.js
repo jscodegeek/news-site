@@ -10,7 +10,7 @@ class CommentList extends Component {
     }
 
     static defaultProps = {
-        commments: []
+        comments: []
     }
 
     render() {
@@ -28,10 +28,10 @@ class CommentList extends Component {
         </a>
     }
 
-    getBody() {
+    getBody() {        
         const { comments, isOpen } = this.props
         if (!isOpen) return null
-        if (!!comments.length) return <p>No comments yet</p>
+        if (!comments.length) return <p>No comments yet</p>
         const commentItems = comments.map(comment => <li key = {comment.id}><Comment comment = {comment} /></li>)
         return <ul>{commentItems}</ul>
     }
